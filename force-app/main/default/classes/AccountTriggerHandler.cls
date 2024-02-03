@@ -1,7 +1,7 @@
 public class AccountTriggerHandler {
     public static void getAccountDetails(List<Account> accList){
         try{
-        System.debug('Account List>>>> '+accList);
+        System.debug('Account Data List>>>> '+accList);
         List<Contact> contactList=new List<Contact>();
         for(Account ac:accList){
             Contact c=new Contact();
@@ -13,7 +13,7 @@ public class AccountTriggerHandler {
             contactList.add(c);
         }
         insert contactList;
-        System.debug('Contact Inserted>>>> '+contactList);
+        System.debug('Contact Inserted After Account Inserted>>>> '+contactList);
     }
      catch(Exception ex){
         System.debug('Error>> '+ex.getMessage());
