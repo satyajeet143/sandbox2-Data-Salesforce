@@ -16,7 +16,7 @@ public class AccountTriggerHandler_Test {
         System.assertEquals(accList.size(), contacts.size(), 'The number of contacts inserted should match the number of accounts.');
         for(Integer i = 0; i < contacts.size(); i++) {
             System.assertEquals('Test Account'+i, contacts[i].LastName, 'The contact last name should match the account name.');
-            System.assertEquals('City'+i, contacts[i].MailingCity, 'The contact mailing city should match the account billing city.');
+            System.assertEquals('City>>> '+i, contacts[i].MailingCity, 'The contact mailing city should match the account billing city.');
             System.assertEquals('Country'+i, contacts[i].MailingCountry, 'The contact mailing country should match the account billing country.');
             System.assertEquals('PostalCode'+i, contacts[i].MailingPostalCode, 'The contact mailing postal code should match the account billing postal code.');
             System.assertEquals('Street'+i, contacts[i].MailingStreet, 'The contact mailing street should match the account billing street.');
